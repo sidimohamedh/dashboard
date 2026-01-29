@@ -1,1 +1,48 @@
-<p>dashboard works!</p>
+<div class="dashboard-container">
+
+  <!-- HEADER -->
+  <div class="dashboard-header">
+    <input type="text" placeholder="Search..." class="search-input"/>
+    <button class="btn-add">+ Add</button>
+  </div>
+
+  <!-- CARDS -->
+  <div class="dashboard-cards">
+    <div class="card">
+      <h3>Visitors</h3>
+      <p class="card-value">320</p>
+      <canvas id="mini1"></canvas>
+    </div>
+
+    <div class="card">
+      <h3>Revenue</h3>
+      <p class="card-value">$12,500</p>
+      <canvas id="mini2"></canvas>
+    </div>
+
+    <div class="card">
+      <h3>New Users</h3>
+      <p class="card-value">180</p>
+      <canvas id="mini3"></canvas>
+    </div>
+  </div>
+
+  <!-- MAIN CHARTS -->
+  <div class="charts-container">
+    <div class="chart-card">
+      <h3>Visitors This Week</h3>
+      <canvas id="lineChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <h3>Sales Per Product</h3>
+      <canvas id="barChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <h3>User Plans</h3>
+      <canvas id="doughnutChart"></canvas>
+    </div>
+  </div>
+
+</div>
