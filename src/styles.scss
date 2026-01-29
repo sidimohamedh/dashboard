@@ -54,3 +54,12 @@ body {
 .text-muted {
   color: var(--text-muted);
 }
+
+.placeholder_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 600;
+}
