@@ -1,10 +1,9 @@
 <header class="navbar">
-  <!-- Left: Page title -->
   <div class="navbar__title">
-    Dashboard
+    <img class="title-icons" [src]="setIcon()" alt="">
+    {{ setTitle() }}
   </div>
 
-  <!-- Right: Actions -->
   <div class="navbar__actions">
     <span class="material-icons navbar__icon">
         <img class="material-icons" src="assets/icons/notifications.svg" alt="">
@@ -14,7 +13,6 @@
         <img class="material-icons" src="assets/icons/settings.svg" alt="">
     </span>
     
-    <!-- User -->
     <span class="material-icons navbar__icon">
         <img class="material-icons" style="width: 25px;" src="assets/icons/account-settings.svg" alt="">
     </span>
