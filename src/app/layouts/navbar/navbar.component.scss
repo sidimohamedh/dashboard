@@ -12,6 +12,16 @@
   font-size: 18px;
   font-weight: 600;
   color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.title-icons {
+  width: 25px;
+  height  : 25px;
+  filter: invert(40%) sepia(18%) saturate(900%) hue-rotate(125deg) brightness(90%) contrast(90%);
 }
 
 .navbar__actions {
