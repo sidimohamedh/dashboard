@@ -1,1 +1,39 @@
-<p>users works!</p>
+<div>
+    <div class="page-header">
+        <input
+            type="text"
+            class="search-input"
+            placeholder="Search..."
+        />
+
+        <button class="btn-add">
+            + Add
+        </button>
+    </div>
+
+    <div class="table-card">
+        <table class="data-table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Created</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr *ngFor="let row of [].constructor(10); let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>User {{ i + 1 }}</td>
+                <td>user{{ i + 1 + "@" }}mail.com</td>
+                <td>
+                <span class="status active">Active</span>
+                </td>
+                <td>2026-01-29</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
