@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+/* ===============================
+   CSS Variables (Theme)
+================================ */
+:root {
+  --primary: #215950;
+  --primary-dark: #183F3A;
+  --primary-light: #2E7C71;
+
+  --accent: #F4B942;
+  --accent-soft: #FFE3A3;
+
+  --bg-main: #F6F9F8;
+  --bg-surface: #FFFFFF;
+
+  --text-primary: #1F2D2B;
+  --text-muted: #6B8F89;
+
+  --border-soft: #DCE8E6;
+}
+
+/* ===============================
+   Reset & Base
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-primary);
+}
+
+/* ===============================
+   Utility
+================================ */
+.container {
+  padding: 24px;
+}
+
+.card {
+  background: var(--bg-surface);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(33, 89, 80, 0.08);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
