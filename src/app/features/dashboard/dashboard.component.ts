@@ -123,6 +123,7 @@ export class DashboardComponent {
       { id: 'mini1', data: [10, 15, 12, 20, 18], color: '#2e7c71' },
       { id: 'mini2', data: [5, 8, 6, 10, 12], color: '#F4B942' },
       { id: 'mini3', data: [20, 18, 25, 22, 30], color: '#215950' },
+      { id: 'mini4', data: [20, 18, 25, 22, 30], color: '#27d81d' },
     ];
 
     miniChartsData.forEach((chart) => {

@@ -4,23 +4,30 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { UsersComponent } from './users/users.component';
 import { ApplicationsComponent } from './applications/applications.component';
 import { TimeInvestedComponent } from './time-invested/time-invested.component';
+import { MainComponent } from '../layouts/main/main.component';
 
 const routes: Routes = [
   {
-    path: 'dashboard',
-    component: DashboardComponent,
-  },
-  {
-    path: 'users',
-    component: UsersComponent,
-  },
-  {
-    path: 'applications',
-    component: ApplicationsComponent,
-  },
-  {
-    path: 'time-invested',
-    component: TimeInvestedComponent,
+    path: '',
+    component: MainComponent,
+    children: [
+      {
+        path: 'dashboard',
+        component: DashboardComponent,
+      },
+      {
+        path: 'users',
+        component: UsersComponent,
+      },
+      {
+        path: 'applications',
+        component: ApplicationsComponent,
+      },
+      {
+        path: 'time-invested',
+        component: TimeInvestedComponent,
+      },
+    ],
   },
 ];
 
