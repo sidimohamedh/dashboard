@@ -13,6 +13,18 @@
   font-weight: 600;
   margin-bottom: 40px;
   padding-left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  img {
+    background-color: #CFE6E2;
+    border-radius: 5px;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
 }
 
 .sidebar__menu {
@@ -30,6 +42,7 @@
   color: #CFE6E2;
   text-decoration: none;
   transition: all 0.2s ease;
+  position: relative;
 }
 
 .sidebar__link:hover {
@@ -44,4 +57,46 @@
 
 .material-icons {
   width: 21px;
+}
+
+.open {
+  width: 60px;
+  padding: 24px 6px;
+}
+
+.open .sidebar__logo {
+  padding-left: 0;
+  justify-content: center;
+}
+
+.sidebar.open {
+  .sidebar__logo span {
+    display: none;
+  }
+}
+
+.sidebar.open {
+  .sidebar__link {
+    position: relative;
+
+    span {
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      left: 72px;
+      background: #2e7c71;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 8px;
+      white-space: nowrap;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      transform: translateX(4px);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    &:hover span {
+      opacity: 1;
+      transform: translateX(8px);
+    }
+  }
 }

@@ -1,3 +1,6 @@
+.page_users {
+  padding: 24px;
+}
 .page-header {
   display: flex;
   align-items: center;
@@ -36,7 +39,6 @@
 .table-card {
   background: var(--bg-surface);
   border-radius: 14px;
-  padding: 16px;
   box-shadow: 0 8px 24px rgba(33, 89, 80, 0.08);
 }
 
@@ -49,13 +51,25 @@
 .data-table th {
   text-align: left;
   padding: 12px;
-  color: var(--text-muted);
+  color: #cfe6e2db; //var(--text-muted);
   font-weight: 500;
   border-bottom: 1px solid var(--border-soft);
+  background-color: #183f3a;
+}
+
+th:first-child {
+  border-radius: 5px 0 0 0;
+}
+
+th:last-child {
+  border-radius: 0 5px 0 0;
 }
 
 .data-table td {
   padding: 12px;
+}
+
+.data-table tr:not(:last-child) td {
   border-bottom: 1px solid var(--border-soft);
 }
 

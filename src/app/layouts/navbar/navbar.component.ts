@@ -20,13 +20,13 @@ export class NavbarComponent {
 
   setTitle(): string {
     switch (this.currentRoute) {
-      case '/applications':
+      case '/main/applications':
         return 'Applications';
 
-      case '/users':
+      case '/main/users':
         return 'Users';
 
-      case '/time-invested':
+      case '/main/time-invested':
         return 'Time invested';
 
       default:
@@ -36,13 +36,13 @@ export class NavbarComponent {
 
   setIcon() {
     switch (this.currentRoute) {
-      case '/applications':
+      case '/main/applications':
         return 'assets/icons/applications.svg';
 
-      case '/users':
+      case '/main/users':
         return 'assets/icons/users.svg';
 
-      case '/time-invested':
+      case '/main/time-invested':
         return 'assets/icons/hourglass-empty.svg';
 
       default:
